@@ -1,5 +1,5 @@
 import {React} from 'react';
-import {Text, StyleSheet, View, FlatList} from 'react-native';
+import {Text, StyleSheet, View, FlatList, TouchableOpacity} from 'react-native';
 
 const students = [
     {id: 0, name: 'Alek', surname: 'Novakovic', age: 17},
@@ -23,6 +23,8 @@ const ListScreen = () => {
                 //horizontal={true}
                 //showsHorizontalScrollIndicator={false}
             />
+            <TouchableOpacity onPress={()=>props.navigation.goBack()}>
+            <Text style={styles.buttonText}>Go back</Text></TouchableOpacity>
         </View>
     );
 };
@@ -35,6 +37,18 @@ const styles=StyleSheet.create({
     style2: {
         fontSize:30,
         color: 'blue',
+    },
+    touchableButton: {
+        backgroundColor: 'purple',
+        marginVertical: 15,
+        paddingVertical: 2,
+        borderRadius: 6,
+        marginHorizontal: 20,
+    },
+    btnText: {
+        color: 'white',
+        textAlign: 'center',
+        fontSize: 40,
     },
 });
 
