@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, StyleSheet, Text, Button} from 'react-native';
+import {View, StyleSheet, Text, Button, TouchableOpacity} from 'react-native';
 
 const MenuScreen = (props) => {
     console.log(props.navigation)
@@ -18,6 +18,11 @@ const MenuScreen = (props) => {
             color='red'
             title='Go to button screen'
             onPress={()=>props.navigation.navigate('Button')}/>
+            <TouchableOpacity
+            style={styles.btn}
+            onPress={()=>props.navigation.navigate('Student')}>
+                <Text style={styles.btnText}>Go to Studnet screen</Text>
+            </TouchableOpacity>
         </View>
     );
 };
@@ -27,6 +32,17 @@ const styles=StyleSheet.create({
         marginVertical: 20,
         fontSize: 20,
         textAlign: 'center',
+    },
+    btn: {
+        backgroundColor: '#4336eb',
+        marginVertical: 10,
+        paddingVertical: 7,
+    },
+    btnText: {
+        color: 'white',
+        textTransform: 'uppercase',
+        textAlign: 'center',
+        fontSize: 15,
     },
 });
 
