@@ -10,6 +10,8 @@ import MainScreen from './src/screens/MainScreen';
 import ListScreen from './src/screens/ListScreen';
 import ProfilesScreen from './src/screens/ProfilesScreen';
 import StudentScreen from './src/screens/StudentScreen';
+import BoxScreen from './src/screens/BoxScreen';
+import Mc11 from './src/screens/MiniChallenge11';
 
 const Stack =createStackNavigator();
 
@@ -23,6 +25,9 @@ export default function App() {
         <Stack.Screen name='Button' component={ButtonScreen}/>
         <Stack.Screen name='List' component={ListScreen}/>
         <Stack.Screen name='Student' component={StudentScreen}/>
+        <Stack.Screen name='Box' component={BoxScreen}/>
+        <Stack.Screen name='Mc11' component={Mc11}/>
+        
       </Stack.Navigator>
     </NavigationContainer>
   );

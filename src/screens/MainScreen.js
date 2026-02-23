@@ -16,6 +16,8 @@ const MainScreen= (props) => {
                 <Text>Go to Profiles Screen
                 </Text>
             </TouchableOpacity>
+
+
         </View>
     );
 };
