@@ -12,6 +12,8 @@ import ProfilesScreen from './src/screens/ProfilesScreen';
 import StudentScreen from './src/screens/StudentScreen';
 import BoxScreen from './src/screens/BoxScreen';
 import Mc11 from './src/screens/MiniChallenge11';
+import PostsScreen from './src/screens/PostsScreen';
+import UsersScreen from './src/screens/UsersScreen';
 
 const Stack =createStackNavigator();
 
@@ -27,6 +29,8 @@ export default function App() {
         <Stack.Screen name='Student' component={StudentScreen}/>
         <Stack.Screen name='Box' component={BoxScreen}/>
         <Stack.Screen name='Mc11' component={Mc11}/>
+        <Stack.Screen name='Posts' component={PostsScreen}/>
+        <Stack.Screen name='Users' component={UsersScreen}/>
         
       </Stack.Navigator>
     </NavigationContainer>

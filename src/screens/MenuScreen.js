@@ -29,6 +29,12 @@ const MenuScreen = (props) => {
             <TouchableOpacity onPress={()=>props.navigation.navigate('Mc11')}>
                             <Text>Mini challenge 11</Text>
             </TouchableOpacity>
+            <TouchableOpacity onPress={()=>props.navigation.navigate('Posts')}>
+                            <Text>PostsScreen</Text>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={()=>props.navigation.navigate('Users')}>
+                            <Text>Users Screen</Text>
+            </TouchableOpacity>
         </View>
     );
 };
