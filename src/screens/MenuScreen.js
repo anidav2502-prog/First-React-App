@@ -35,6 +35,9 @@ const MenuScreen = (props) => {
             <TouchableOpacity onPress={()=>props.navigation.navigate('Users')}>
                             <Text>Users Screen</Text>
             </TouchableOpacity>
+            <TouchableOpacity onPress={()=>props.navigation.navigate('Modul13')}>
+                            <Text>Modul13</Text>
+            </TouchableOpacity>
         </View>
     );
 };
