@@ -15,6 +15,8 @@ import Mc11 from './src/screens/MiniChallenge11';
 import PostsScreen from './src/screens/PostsScreen';
 import UsersScreen from './src/screens/UsersScreen';
 import Modul13 from './src/screens/Modul13';
+import CountriesScreen from './src/screens/CountriesScreen';
+import CountryDetails from './src/screens/CountryDetails';
 
 const Stack =createStackNavigator();
 
@@ -33,6 +35,8 @@ export default function App() {
         <Stack.Screen name='Posts' component={PostsScreen}/>
         <Stack.Screen name='Users' component={UsersScreen}/>
         <Stack.Screen name='Modul13' component={Modul13}/>
+        <Stack.Screen name='Countries' component={CountriesScreen}/>
+        <Stack.Screen name='Country' component={CountryDetails}/>
         
       </Stack.Navigator>
     </NavigationContainer>
