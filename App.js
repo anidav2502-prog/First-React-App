@@ -17,6 +17,7 @@ import UsersScreen from './src/screens/UsersScreen';
 import Modul13 from './src/screens/Modul13';
 import CountriesScreen from './src/screens/CountriesScreen';
 import CountryDetails from './src/screens/CountryDetails';
+import ProductScreen from './src/screens/ProductScreen';
 
 const Stack =createStackNavigator();
 
@@ -37,6 +38,7 @@ export default function App() {
         <Stack.Screen name='Modul13' component={Modul13}/>
         <Stack.Screen name='Countries' component={CountriesScreen}/>
         <Stack.Screen name='Country' component={CountryDetails}/>
+        <Stack.Screen name='Products' component={ProductScreen}/>
         
       </Stack.Navigator>
     </NavigationContainer>
